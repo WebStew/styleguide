@@ -1,0 +1,12 @@
+{
+	"name" 				: "YOUR PROJECT NAME" 	,
+	"version" 			: "0.1.0" 				,
+	"dependencies" 		: {} 					,
+	"devDependencies" 	: {
+		"chai"              : "~1.10.0" 		,
+		"sinon"             : "~1.11.1" 		,
+		"sinon-chai"        : "~2.6.0" 			,
+		"chai-jquery"       : "~2.0.0" 			,
+		"fixtures"          : "~1.5.3"
+	}
+}

@@ -1,0 +1,30 @@
+
+.loader {
+    min-height  : 200px;
+    position    : relative;
+}
+
+.loader__signal {
+    background  : 0 0 url( 'images/loader-small.gif' ) no-repeat;
+    height      : 32px;
+    left        : 50%;
+    margin      : -16px 0 0 -16px;
+    position    : absolute;
+    overflow    : hidden;
+    top         : 30%;
+    width       : 32px;
+}
+
+.loader__body {
+
+    .csstransitions & {
+        @include    transition-duration( 0.25s );
+        @include    transition-property( opacity );
+        @include    transition-timing( $transition-function );
+    }
+}
+
+.loader__body--loading {
+    cursor      : wait;
+    @include    opacity( 0.4 );
+}

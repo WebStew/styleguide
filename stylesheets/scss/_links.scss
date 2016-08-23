@@ -1,0 +1,31 @@
+
+a {
+    border-bottom   : 1px solid transparent;
+    color           : $color-action;
+    cursor          : pointer;
+    text-decoration : none;
+
+    &:visited {
+       // color       : darken( $color-actioned, 25 );
+    }
+
+    &:hover,
+    &:focus {
+        border-bottom   : 1px solid darken( $color-action, 25 );
+        color           : darken( $color-action, 25 );
+        text-decoration : none;
+    }
+
+    .csstransitions & {
+        @include    transition-duration( 0.25s );
+        @include    transition-property( border , color );
+        @include    transition-timing( $transition-function );
+    }
+}
+
+.link--skip {
+
+    &:focus {
+        position : static;
+    }
+}
